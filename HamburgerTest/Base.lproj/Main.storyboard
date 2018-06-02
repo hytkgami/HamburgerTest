@@ -1,24 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bRo-m4-6zy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="IIy-dl-H4B">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="bRo-m4-6zy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HD9-1t-lHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKf-DG-ZrN">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="gTg-ES-OHo">
+                                        <barButtonItem key="leftBarButtonItem" title="三" id="X0M-vK-KKw">
+                                            <connections>
+                                                <action selector="tapMenu:" destination="fof-Te-5yo" id="cFU-Qy-YEG"/>
+                                                <segue destination="DWi-ZB-ulB" kind="presentation" identifier="showMenu" modalTransitionStyle="crossDissolve" id="IMF-sh-cRE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dKf-DG-ZrN" firstAttribute="top" secondItem="29T-Eg-AJb" secondAttribute="top" id="BJs-5E-iBg"/>
+                            <constraint firstItem="dKf-DG-ZrN" firstAttribute="trailing" secondItem="29T-Eg-AJb" secondAttribute="trailing" id="OtQ-cD-c1R"/>
+                            <constraint firstItem="dKf-DG-ZrN" firstAttribute="leading" secondItem="29T-Eg-AJb" secondAttribute="leading" id="hKu-Dz-dHN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="29T-Eg-AJb"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBW-Hd-1gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="fof-Te-5yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
+            <point key="canvasLocation" x="754" y="620"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="mnH-66-Bzj">
+            <objects>
+                <viewController id="DWi-ZB-ulB" customClass="MenuViewController" customModule="HamburgerTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.45000000000000001" contentMode="scaleToFill" id="wc7-0w-CVX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lt8-Dl-iQb">
+                                <rect key="frame" x="0.0" y="20" width="280" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4O-dt-WVl">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メニュー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRd-1o-AQJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lRd-1o-AQJ" secondAttribute="trailing" id="1Qe-dR-saY"/>
+                                            <constraint firstAttribute="height" constant="48" id="FkG-S2-wVo"/>
+                                            <constraint firstItem="lRd-1o-AQJ" firstAttribute="top" secondItem="J4O-dt-WVl" secondAttribute="top" id="Jrm-EC-6Xd"/>
+                                            <constraint firstItem="lRd-1o-AQJ" firstAttribute="leading" secondItem="J4O-dt-WVl" secondAttribute="leading" id="avx-Cx-28u"/>
+                                            <constraint firstAttribute="bottom" secondItem="lRd-1o-AQJ" secondAttribute="bottom" id="vmu-Yn-Uk4"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="HOG-8p-ppF"/>
+                                    <constraint firstAttribute="trailing" secondItem="J4O-dt-WVl" secondAttribute="trailing" id="RIC-qx-gjI"/>
+                                    <constraint firstItem="J4O-dt-WVl" firstAttribute="leading" secondItem="lt8-Dl-iQb" secondAttribute="leading" id="Vzc-ut-nOG"/>
+                                    <constraint firstItem="J4O-dt-WVl" firstAttribute="top" secondItem="lt8-Dl-iQb" secondAttribute="top" id="vzU-j6-KZ0"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="si7-dI-6uF" appends="YES" id="Rf8-WJ-p2Y"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lt8-Dl-iQb" firstAttribute="top" secondItem="8CQ-UN-7oG" secondAttribute="top" id="HqC-sk-JZm"/>
+                            <constraint firstItem="8CQ-UN-7oG" firstAttribute="bottom" secondItem="lt8-Dl-iQb" secondAttribute="bottom" id="Mcd-Bc-M1O"/>
+                            <constraint firstItem="lt8-Dl-iQb" firstAttribute="leading" secondItem="8CQ-UN-7oG" secondAttribute="leading" id="Y93-OA-dPP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8CQ-UN-7oG"/>
+                    </view>
+                    <connections>
+                        <outlet property="menuView" destination="lt8-Dl-iQb" id="N0u-xz-4h9"/>
+                        <outlet property="wrapView" destination="wc7-0w-CVX" id="cic-o7-gyI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMy-0w-Wf3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="si7-dI-6uF">
+                    <connections>
+                        <action selector="rightSwipe:" destination="DWi-ZB-ulB" id="xhE-OI-Kx8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1734" y="621"/>
         </scene>
     </scenes>
 </document>
