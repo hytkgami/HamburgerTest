@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		549169C846F4DC8B00BF6263 /* Pods_HamburgerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1C14877D6F3F930DFAD351 /* Pods_HamburgerTest.framework */; };
+		7A6843D520C289F1002CAFCE /* WSCoachMarksView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6843D620C289F1002CAFCE /* WSCoachMarksView.framework */; };
 		7A97C0C920C27B950082A41F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97C0C820C27B950082A41F /* AppDelegate.swift */; };
 		7A97C0CB20C27B950082A41F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97C0CA20C27B950082A41F /* ViewController.swift */; };
 		7A97C0CE20C27B950082A41F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A97C0CC20C27B950082A41F /* Main.storyboard */; };
@@ -16,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5CE5D7383000349B0D76EC86 /* Pods-HamburgerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamburgerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HamburgerTest/Pods-HamburgerTest.release.xcconfig"; sourceTree = "<group>"; };
+		6053CDD185F0E709A3126CB0 /* Pods-HamburgerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HamburgerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HamburgerTest/Pods-HamburgerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		6E1C14877D6F3F930DFAD351 /* Pods_HamburgerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamburgerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6843D420C28990002CAFCE /* HamburgerTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HamburgerTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A6843D620C289F1002CAFCE /* WSCoachMarksView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WSCoachMarksView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A97C0C520C27B950082A41F /* HamburgerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamburgerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A97C0C820C27B950082A41F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A97C0CA20C27B950082A41F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +38,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A6843D520C289F1002CAFCE /* WSCoachMarksView.framework in Frameworks */,
+				549169C846F4DC8B00BF6263 /* Pods_HamburgerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BD9037CFCE91BEC86B2B89C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A6843D620C289F1002CAFCE /* WSCoachMarksView.framework */,
+				6E1C14877D6F3F930DFAD351 /* Pods_HamburgerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24563E3D57CE6DAAF9CC7FBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6053CDD185F0E709A3126CB0 /* Pods-HamburgerTest.debug.xcconfig */,
+				5CE5D7383000349B0D76EC86 /* Pods-HamburgerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7A97C0BC20C27B950082A41F = {
 			isa = PBXGroup;
 			children = (
+				7A6843D420C28990002CAFCE /* HamburgerTest-Bridging-Header.h */,
 				7A97C0C720C27B950082A41F /* HamburgerTest */,
 				7A97C0C620C27B950082A41F /* Products */,
+				24563E3D57CE6DAAF9CC7FBA /* Pods */,
+				1BD9037CFCE91BEC86B2B89C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7A97C0D720C27B950082A41F /* Build configuration list for PBXNativeTarget "HamburgerTest" */;
 			buildPhases = (
+				7F916C91A14081951457F47A /* [CP] Check Pods Manifest.lock */,
 				7A97C0C120C27B950082A41F /* Sources */,
 				7A97C0C220C27B950082A41F /* Frameworks */,
 				7A97C0C320C27B950082A41F /* Resources */,
+				96C10F7CC98BA4F2E4999DB0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +165,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F916C91A14081951457F47A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HamburgerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96C10F7CC98BA4F2E4999DB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HamburgerTest/Pods-HamburgerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WSCoachMarksView/WSCoachMarksView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WSCoachMarksView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HamburgerTest/Pods-HamburgerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7A97C0C120C27B950082A41F /* Sources */ = {
@@ -276,6 +347,7 @@
 		};
 		7A97C0D820C27B950082A41F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6053CDD185F0E709A3126CB0 /* Pods-HamburgerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,6 +364,7 @@
 		};
 		7A97C0D920C27B950082A41F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CE5D7383000349B0D76EC86 /* Pods-HamburgerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

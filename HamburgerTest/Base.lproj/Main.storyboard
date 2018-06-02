@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="IIy-dl-H4B">
             <objects>
-                <viewController id="bRo-m4-6zy" sceneMemberID="viewController">
+                <viewController id="bRo-m4-6zy" customClass="ViewController" customModule="HamburgerTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HD9-1t-lHu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="29T-Eg-AJb"/>
                     </view>
+                    <connections>
+                        <outlet property="menuButton" destination="X0M-vK-KKw" id="Fnt-fH-eFm"/>
+                        <outlet property="navigationBar" destination="gTg-ES-OHo" id="WUJ-TK-RVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBW-Hd-1gq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="fof-Te-5yo" userLabel="Exit" sceneMemberID="exit"/>

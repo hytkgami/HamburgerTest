@@ -1,0 +1,16 @@
+PODS:
+  - WSCoachMarksView (0.2)
+
+DEPENDENCIES:
+  - WSCoachMarksView (~> 0.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WSCoachMarksView
+
+SPEC CHECKSUMS:
+  WSCoachMarksView: d1653c058c8289a300ddf28af9dd49eb659c9c42
+
+PODFILE CHECKSUM: 4f610c7a793005cc63f8513571c16b9d0c019e16
+
+COCOAPODS: 1.5.3
